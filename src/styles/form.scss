@@ -37,7 +37,7 @@
     @include hover(color, $second-text-color);
     @include hover(background-color, $first-text-color);
 
-    @include onTablet {
+    @include on-tablet {
       width: 200px;
     }
 

@@ -22,7 +22,7 @@
     display: flex;
     justify-content: center;
 
-    @include onDesktop {
+    @include on-desktop {
       position: static;
       width: 200px;
       margin: 0 auto;

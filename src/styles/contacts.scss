@@ -1,5 +1,6 @@
 .contacts {
-  @include pageGrid;
+  @include page-grid;
+
   background: $additional-page-color;
 
   &__title {
@@ -9,11 +10,11 @@
   &__inner-wrapper {
     grid-column: span 2;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: span 3;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: span 4;
     }
   }
@@ -21,7 +22,7 @@
   &__description {
     display: none;
 
-    @include onTablet {
+    @include on-tablet {
       display: inline;
     }
   }
@@ -29,11 +30,11 @@
   &__form {
     grid-column: span 2;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: span span 3;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: span 6 / -1;
     }
   }
@@ -41,7 +42,7 @@
   &__links-wrapper {
     display: none;
 
-    @include onTablet {
+    @include on-tablet {
       display: flex;
       flex-direction: column;
     }
@@ -61,7 +62,7 @@
   &__up {
     display: none;
 
-    @include onTablet {
+    @include on-tablet {
       display: flex;
     }
 

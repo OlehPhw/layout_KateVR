@@ -1,22 +1,24 @@
 .section {
-  @include paddingBlock;
-  @include paddingInline;
+  @include padding-block;
+  @include padding-inline;
 
   &__title {
-    @include changeFontSize(
+    @include change-font-size(
       $h2-mobile-font-size,
       $h2-mobile-font-size,
       $h2-desktop-font-size
     );
+
     line-height: 100%;
     margin: 0;
 
     &--main {
-      @include changeFontSize(
+      @include change-font-size(
         $h1-mobile-font-size,
         $h1-mobile-font-size,
         $h1-desktop-font-size
       );
+
       line-height: 130%;
     }
 

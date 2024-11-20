@@ -2,7 +2,7 @@
   background: $additional-page-color;
   display: block;
 
-  @include onTablet {
+  @include on-tablet {
     display: block;
     text-align: center;
   }
@@ -16,8 +16,9 @@
   }
 
   &__article-wrapper {
-    @include pageGrid;
     gap: 20px;
+
+    @include page-grid;
   }
 
   &__article {

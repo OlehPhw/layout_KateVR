@@ -1,14 +1,15 @@
 .benefits {
-  @include onTablet {
+  @include on-tablet {
     display: block;
     text-align: center;
   }
 
   &__title {
-    @include changeMargin(32, 32, 84, bottom);
     text-align: left;
 
-    @include onDesktop {
+    @include change-margin(32, 32, 84, bottom);
+
+    @include on-desktop {
       text-align: center;
     }
   }
@@ -16,7 +17,7 @@
   &__article-wrapper {
     gap: 20px;
 
-    @include onTablet {
+    @include on-tablet {
       display: flex;
     }
   }
@@ -25,7 +26,7 @@
     position: sticky;
     bottom: 10px;
 
-    @include onDesktop {
+    @include on-desktop {
       display: flex;
     }
   }

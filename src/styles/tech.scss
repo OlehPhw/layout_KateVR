@@ -16,11 +16,11 @@
     position: relative;
     grid-column: 1 / -1;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 3 / -3;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: 2 / 9;
     }
   }
@@ -79,7 +79,7 @@
       position: absolute;
       margin-top: 90%;
 
-      @include onTablet {
+      @include on-tablet {
         grid-column: 9 / -1;
         margin-top: 130%;
       }

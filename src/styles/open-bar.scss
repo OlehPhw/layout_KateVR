@@ -2,11 +2,11 @@
   width: fit-content;
   display: flex;
 
-  @include onDesktop {
+  @include on-desktop {
     display: none;
   }
 
-  @include onTablet {
+  @include on-tablet {
     flex-direction: column;
   }
 
@@ -28,7 +28,7 @@
       url('../images/open-circle-hover-icon.svg')
     );
 
-    @include onTablet {
+    @include on-tablet {
       height: 62px;
       width: 62px;
     }
@@ -51,12 +51,12 @@
 
     max-width: 170px;
 
-    @include onTablet {
+    @include on-tablet {
       max-width: 340px;
     }
 
     &--longest {
-      @include onTablet {
+      @include on-tablet {
         margin-left: -50%;
       }
     }
@@ -85,7 +85,7 @@
     font-size: $h3-mobile-font-size;
     color: $description-text-color;
 
-    @include onTablet {
+    @include on-tablet {
       padding: 17px 10px 22px;
       font-size: $h3-heavy-font-size;
     }

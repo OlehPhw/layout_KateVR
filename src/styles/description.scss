@@ -1,13 +1,14 @@
 .description {
-  @include pageGrid;
+  @include page-grid;
+
   padding-top: 0;
   padding-bottom: 60px;
 
-  @include onTablet {
+  @include on-tablet {
     padding-top: 55px;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     padding-top: 100px;
     padding-bottom: 84px;
   }
@@ -15,11 +16,11 @@
   &__wrapper-left {
     grid-column: span 2;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: span 3;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: span 6;
     }
   }
@@ -27,11 +28,11 @@
   &__img-container {
     grid-column: span 2;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: span 3;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: span 6;
     }
   }
@@ -42,7 +43,7 @@
     object-fit: contain;
 
     &--small {
-      @include onTablet {
+      @include on-tablet {
         display: none;
       }
     }
@@ -54,7 +55,7 @@
   }
 
   &__description {
-    @include onDesktop {
+    @include on-desktop {
       margin-left: $margin-header-for-desctop;
     }
   }
@@ -62,13 +63,14 @@
   &__price {
     font-size: 18px;
     color: $first-text-color;
-    @include onDesktop {
+
+    @include on-desktop {
       margin-left: $margin-header-for-desctop;
     }
   }
 
   &__button {
-    @include onDesktop {
+    @include on-desktop {
       margin-left: $margin-header-for-desctop;
     }
   }
@@ -79,7 +81,7 @@
     grid-column: 1 / -1;
     display: none;
 
-    @include onDesktop {
+    @include on-desktop {
       display: flex;
       justify-content: space-between;
     }
@@ -92,11 +94,13 @@
 
   &__faq {
     @include hover(color, $second-text-color);
+
     cursor: pointer;
   }
 
   &__help {
     @include hover(color, $second-text-color);
+
     cursor: pointer;
   }
 
@@ -119,8 +123,8 @@
   }
 
   &__triangle {
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
     border-top: 4px solid $second-text-color;
@@ -128,7 +132,7 @@
     cursor: pointer;
   }
 
-  @include paddingInline;
+  @include padding-inline;
 }
 
 .description__more:hover {

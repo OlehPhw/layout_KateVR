@@ -11,7 +11,7 @@
   &__container {
     width: 100%;
 
-    @include pageGrid;
+    @include page-grid;
   }
 
   &__content {

@@ -1,5 +1,5 @@
 .about {
-  @include pageGrid;
+  @include page-grid;
 
   &__title {
     margin-bottom: 30px;
@@ -8,11 +8,11 @@
   &__img-wrapper {
     grid-column: span 2;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 1 / 4;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: 3 / 7;
     }
   }
@@ -28,38 +28,40 @@
     margin-top: 20px;
     grid-column: span 2;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 4 / -1;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: 9 / -1;
     }
   }
 
   &__greeting-wrapper {
-    @include changeMargin(88, 107, 183, top);
     grid-column: span 2;
 
-    @include onTablet {
+    @include change-margin(88, 107, 183, top);
+
+    @include on-tablet {
       grid-column: 1 / 5;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: 1 / 6;
     }
   }
 
   &__decor-img {
-    @include changeMargin(0, 83, 183, top);
     display: none;
 
-    @include onTablet {
+    @include change-margin(0, 83, 183, top);
+
+    @include on-tablet {
       display: block;
       grid-column: 5 / -1;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: 7 / -1;
     }
 
@@ -74,7 +76,7 @@
   &__slider {
     display: none;
 
-    @include onDesktop {
+    @include on-desktop {
       display: flex;
     }
   }

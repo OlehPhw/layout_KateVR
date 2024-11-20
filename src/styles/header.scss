@@ -3,14 +3,14 @@
   justify-content: space-between;
   align-items: center;
 
-  @include changeMargin(18, 30, 47, top);
-  @include changeMargin(18, 30, 47, top);
+  @include change-margin(18, 30, 47, top);
+  @include change-margin(18, 30, 47, top);
 
   &__logo {
     width: 58px;
     height: 12px;
 
-    @include onTablet {
+    @include on-tablet {
       width: 77.5px;
       height: 16px;
     }
@@ -25,7 +25,8 @@
 
   &__dropdown {
     display: none;
-    @include onDesktop {
+
+    @include on-desktop {
       display: flex;
     }
   }
@@ -38,7 +39,8 @@
 
   &__nav {
     display: none;
-    @include onDesktop {
+
+    @include on-desktop {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -47,10 +49,10 @@
   }
 
   &__icon {
-    @include onDesktop {
+    @include on-desktop {
       display: none;
     }
   }
 
-  @include paddingInline;
+  @include padding-inline;
 }

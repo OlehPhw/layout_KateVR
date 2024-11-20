@@ -1,0 +1,36 @@
+.benefits {
+  @include onTablet {
+    display: block;
+    text-align: center;
+  }
+
+  &__title {
+    @include changeMargin(32, 32, 84, bottom);
+    text-align: left;
+
+    @include onDesktop {
+      text-align: center;
+    }
+  }
+
+  &__article-wrapper {
+    gap: 20px;
+
+    @include onTablet {
+      display: flex;
+    }
+  }
+
+  &__button-wrapper {
+    position: sticky;
+    bottom: 10px;
+
+    @include onDesktop {
+      display: flex;
+    }
+  }
+
+  &__button {
+    margin: 80 auto;
+  }
+}

@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include changeMargin(18, 30, 47, top);
+  @include changeMargin(18, 30, 47, top);
+
+  &__logo {
+    width: 58px;
+    height: 12px;
+
+    @include onTablet {
+      width: 77.5px;
+      height: 16px;
+    }
+  }
+
+  &__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34.5px;
+  }
+
+  &__dropdown {
+    display: none;
+    @include onDesktop {
+      display: flex;
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__nav {
+    display: none;
+    @include onDesktop {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 36px;
+    }
+  }
+
+  &__icon {
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  @include paddingInline;
+}

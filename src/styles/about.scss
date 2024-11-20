@@ -1,0 +1,81 @@
+.about {
+  @include pageGrid;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__img-wrapper {
+    grid-column: span 2;
+
+    @include onTablet {
+      grid-column: 1 / 4;
+    }
+
+    @include onDesktop {
+      grid-column: 3 / 7;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    min-width: 208px;
+    height: 290px;
+    object-fit: contain;
+  }
+
+  &__product-wrapper {
+    margin-top: 20px;
+    grid-column: span 2;
+
+    @include onTablet {
+      grid-column: 4 / -1;
+    }
+
+    @include onDesktop {
+      grid-column: 9 / -1;
+    }
+  }
+
+  &__greeting-wrapper {
+    @include changeMargin(88, 107, 183, top);
+    grid-column: span 2;
+
+    @include onTablet {
+      grid-column: 1 / 5;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 6;
+    }
+  }
+
+  &__decor-img {
+    @include changeMargin(0, 83, 183, top);
+    display: none;
+
+    @include onTablet {
+      display: block;
+      grid-column: 5 / -1;
+    }
+
+    @include onDesktop {
+      grid-column: 7 / -1;
+    }
+
+    background-image: url('../images/about-us.svg');
+    background-size: auto 100%;
+    background-size: cover;
+
+    width: 400px;
+    height: 400px;
+  }
+
+  &__slider {
+    display: none;
+
+    @include onDesktop {
+      display: flex;
+    }
+  }
+}

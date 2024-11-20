@@ -1,0 +1,26 @@
+.gaming {
+  background: $additional-page-color;
+  display: block;
+
+  @include onTablet {
+    display: block;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__semi-title {
+    margin-bottom: 83px;
+  }
+
+  &__article-wrapper {
+    @include pageGrid;
+    gap: 20px;
+  }
+
+  &__article {
+    grid-column: span 3;
+  }
+}

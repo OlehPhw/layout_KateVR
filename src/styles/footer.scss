@@ -1,0 +1,72 @@
+.footer {
+  background: $additional-page-color;
+  padding-bottom: 50px;
+
+  @include pageGrid;
+
+  @include onTablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding-bottom: 0;
+  }
+
+  @include onDesktop {
+    height: 100px;
+  }
+
+  &__left {
+    grid-column: span 1;
+    margin-bottom: 15px;
+
+    @include onTablet {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__nav {
+    font-weight: $thin-font-weight;
+    font-size: $h3-regular-font-size;
+
+    grid-column: 1 / 2;
+  }
+
+  &__nav-list {
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+
+    @include onTablet {
+      flex-direction: row;
+      gap: 43px;
+    }
+  }
+
+  &__links-wrapper {
+    grid-column: 2 / -1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @include onTablet {
+      display: none;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $description-text-color;
+    font-weight: $thin-font-weight;
+
+    @include hover(color, $first-text-color);
+  }
+
+  &__right {
+    display: flex;
+    gap: 18px;
+    grid-column: 2 / -1;
+  }
+
+  @include paddingInline;
+}

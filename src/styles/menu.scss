@@ -19,6 +19,11 @@
     position: absolute;
     right: 20;
     top: 18;
+
+    @include on-tablet {
+      right: 30;
+      top: 34;
+    }
   }
 
   &__nav {

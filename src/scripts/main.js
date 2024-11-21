@@ -80,11 +80,13 @@ document.addEventListener('DOMContentLoaded', () => {
   faqButtons.forEach(button => {
     button.addEventListener('click', () => {
       faqAside.classList.add('page__aside--active');
+      document.body.classList.add('page__no-scroll');
     })
   })
 
   faqCloseButton.addEventListener('click', () => {
     faqAside.classList.remove('page__aside--active');
+    document.body.classList.remove('page__no-scroll');
     closeAccordions();
   })
 });
@@ -99,11 +101,13 @@ document.addEventListener('DOMContentLoaded', () => {
   helpButtons.forEach(button => {
     button.addEventListener('click', () => {
       helpAside.classList.add('page__aside--active');
+      document.body.classList.add('page__no-scroll');
     })
   })
 
   helpCloseButton.addEventListener('click', () => {
     helpAside.classList.remove('page__aside--active');
+    document.body.classList.remove('page__no-scroll');
   })
 });
 
@@ -117,11 +121,13 @@ document.addEventListener('DOMContentLoaded', () => {
   buyButtons.forEach(button => {
     button.addEventListener('click', () => {
       bucketAside.classList.add('page__aside--active');
+      document.body.classList.add('page__no-scroll');
     })
   })
 
   bucketCloseButton.addEventListener('click', () => {
     bucketAside.classList.remove('page__aside--active');
+    document.body.classList.remove('page__no-scroll');
   })
 });
 
@@ -136,11 +142,13 @@ document.addEventListener('DOMContentLoaded', () => {
   menuButtons.forEach(button => {
     button.addEventListener('click', () => {
       menuAside.classList.add('page__aside--active');
+      document.body.classList.add('page__no-scroll');
     })
   })
 
   menuCloseButton.addEventListener('click', () => {
     menuAside.classList.remove('page__aside--active');
+    document.body.classList.remove('page__no-scroll');
   })
 
   linkButtons.forEach(button => {

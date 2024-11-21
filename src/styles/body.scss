@@ -36,4 +36,8 @@ body {
         background-color 0.3s 0.3s;
     }
   }
+
+  &__no-scroll {
+    overflow: hidden;
+  }
 }

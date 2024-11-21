@@ -17,6 +17,20 @@
     }
   }
 
+  &__counter {
+    grid-column: 2 / 3;
+    color: $second-text-color;
+    margin-top: 20px;
+
+    justify-self: end;
+
+    display: none;
+
+    @include on-desktop {
+      display: flex;
+    }
+  }
+
   &__img {
     width: 100%;
     min-width: 208px;

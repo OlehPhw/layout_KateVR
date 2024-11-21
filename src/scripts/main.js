@@ -125,6 +125,24 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 });
 
+// menu aside
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuAside = document.querySelector('.menu');
+  const menuButtons = document.querySelectorAll('.icon--menu');
+  const menuCloseButton = document.querySelector('.menu__close');
+
+  menuButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      menuAside.classList.add('page__aside--active');
+    })
+  })
+
+  menuCloseButton.addEventListener('click', () => {
+    menuAside.classList.remove('page__aside--active');
+  })
+});
+
 // slider
 
 import deviceImage from "../images/device-photo-main-large.png";
@@ -217,6 +235,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextButton = document.querySelector(".slider__right--bot");
   const prevButton = document.querySelector(".slider__left--bot");
   const slider = document.querySelector(".about__slider");
+  const counter = document.querySelector(".about__counter");
 
   function updateImage(index) {
     imgElement.src = images[index];
@@ -260,7 +279,7 @@ document.addEventListener("DOMContentLoaded", () => {
       updateImage(currentIndex);
       updateUnderline();
     }
-
+    counter.textContent = `${currentIndex + 1}/3`;
     checkButtonColor();
   });
 
@@ -270,7 +289,19 @@ document.addEventListener("DOMContentLoaded", () => {
       updateImage(currentIndex);
       updateUnderline();
     }
-
+    counter.textContent = `${currentIndex + 1}/3`;
     checkButtonColor();
+  });
+});
+
+// form
+
+const forms = document.querySelectorAll(".form");
+const bucketAside = document.querySelector('.bucket');
+
+forms.forEach(form => {
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    bucketAside.classList.add('page__aside--active');
   });
 });

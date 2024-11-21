@@ -131,6 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuAside = document.querySelector('.menu');
   const menuButtons = document.querySelectorAll('.icon--menu');
   const menuCloseButton = document.querySelector('.menu__close');
+  const linkButtons = document.querySelectorAll('.nav__link');
 
   menuButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -140,6 +141,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   menuCloseButton.addEventListener('click', () => {
     menuAside.classList.remove('page__aside--active');
+  })
+
+  linkButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      menuAside.classList.remove('page__aside--active');
+    })
   })
 });
 
